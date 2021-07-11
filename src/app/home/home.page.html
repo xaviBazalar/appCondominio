@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      NuevavistaApp
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,24 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">NuevavistaApp</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    
+      <ion-label class="title-login">Ingrese sus datos</ion-label>
+    
+    <ion-item>
+      <ion-input placeholder="Ingrese Usuario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Ingrese Contraseña"></ion-input>
+    </ion-item>
+    <br>
+    <ion-label>¿Olvidaste tu contraseña?</ion-label>
+    <ion-segment-button routerLink="/inicio" class="btn-login" value="loginApp">
+        <ion-label>Iniciar Sesión</ion-label>
+    </ion-segment-button>
   </div>
 </ion-content>

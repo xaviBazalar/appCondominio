@@ -1,0 +1,25 @@
+#container{
+    padding: 8%;
+    flex-wrap: wrap;
+}
+
+.col-50{
+    width: 39%;
+    float: left;
+    height: 128px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-100{
+    width: 88%;
+    float: left;
+    height: 128px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

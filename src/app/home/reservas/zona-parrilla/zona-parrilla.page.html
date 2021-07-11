@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>zona-parrilla</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-item>
+      <ion-label>
+        Fecha:
+      </ion-label>
+      <ion-input type="date" placeholder="Fecha"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Hora:
+      </ion-label>
+      <ion-input type="time" placeholder="Hora"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="number" placeholder="Nro Invitados"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Parrilla</ion-label>
+      <ion-select placeholder="Select One">
+        <ion-select-option value="">..Selecciona</ion-select-option>
+        <ion-select-option value="1">Parrilla 1</ion-select-option>
+        <ion-select-option value="1">Parrilla 2</ion-select-option>
+        <ion-select-option value="1">Parrilla 3</ion-select-option>
+        <ion-select-option value="1">Parrilla 4</ion-select-option>
+        <ion-select-option value="1">Parrilla 5</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+      <ion-label class="nota-aviso">
+        *Maximo 5 invitados
+      </ion-label>
+
+    <ion-segment-button  class="btn-registrar">
+      <ion-label>Registrar Reserva</ion-label>
+    </ion-segment-button>
+  </div>
+</ion-content>
