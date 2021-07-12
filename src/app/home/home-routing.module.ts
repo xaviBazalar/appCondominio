@@ -29,8 +29,20 @@ const routes: Routes = [
     loadChildren: () => import('./reservas/zona-parrilla/zona-parrilla.module').then( m => m.ZonaParrillaPageModule)
   },
   {
-    path: 'incidencias',
+    path: 'reservas/zona-deportiva', pathMatch: 'full',
+    loadChildren: () => import('./reservas/zona-deportiva/zona-deportiva.module').then( m => m.ZonaDeportivaPageModule)
+  },
+  {
+    path: 'reservas/listar', pathMatch: 'full',
+    loadChildren: () => import('./reservas/listar-reservas/listar-reservas.module').then( m => m.ListarReservasPageModule)
+  },
+  {
+    path: 'incidencias', pathMatch: 'full',
     loadChildren: () => import('./incidencias/incidencias.module').then( m => m.IncidenciasPageModule)
+  },
+  {
+    path: 'incidencias/listar', pathMatch: 'full',
+    loadChildren: () => import('./incidencias/listar-incidencias/listar-incidencias.module').then( m => m.ListarIncidenciasPageModule)
   }
 ];
 

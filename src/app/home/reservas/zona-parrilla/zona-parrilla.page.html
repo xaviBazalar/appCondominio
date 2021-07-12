@@ -10,26 +10,25 @@
       <ion-label>
         Fecha:
       </ion-label>
-      <ion-input type="date" placeholder="Fecha"></ion-input>
+      <ion-input [(ngModel)]="fecha" type="date" placeholder="Fecha"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>
         Hora:
       </ion-label>
-      <ion-input type="time" placeholder="Hora"></ion-input>
+      <ion-input [(ngModel)]="hora" type="time" placeholder="Hora"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input type="number" placeholder="Nro Invitados"></ion-input>
+      <ion-input [(ngModel)]="nro_invitados" type="number" placeholder="Nro Invitados"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Parrilla</ion-label>
-      <ion-select placeholder="Select One">
-        <ion-select-option value="">..Selecciona</ion-select-option>
+      <ion-select [(ngModel)]="nro_parrilla" placeholder="..Seleccionar parrilla">
         <ion-select-option value="1">Parrilla 1</ion-select-option>
-        <ion-select-option value="1">Parrilla 2</ion-select-option>
-        <ion-select-option value="1">Parrilla 3</ion-select-option>
-        <ion-select-option value="1">Parrilla 4</ion-select-option>
-        <ion-select-option value="1">Parrilla 5</ion-select-option>
+        <ion-select-option value="2">Parrilla 2</ion-select-option>
+        <ion-select-option value="3">Parrilla 3</ion-select-option>
+        <ion-select-option value="4">Parrilla 4</ion-select-option>
+        <ion-select-option value="5">Parrilla 5</ion-select-option>
       </ion-select>
     </ion-item>
 
@@ -37,7 +36,7 @@
         *Maximo 5 invitados
       </ion-label>
 
-    <ion-segment-button  class="btn-registrar">
+    <ion-segment-button  class="btn-registrar" (click)="registrarZonaParrilla()">
       <ion-label>Registrar Reserva</ion-label>
     </ion-segment-button>
   </div>

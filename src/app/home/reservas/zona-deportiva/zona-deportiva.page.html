@@ -1,9 +1,33 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>zona-deportiva</ion-title>
+    <ion-title>Zona Deportiva</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div id="container">
+    <ion-item>
+      <ion-label>
+        Fecha:
+      </ion-label>
+      <ion-input [(ngModel)]="fecha" type="date" placeholder="Fecha"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Hora:
+      </ion-label>
+      <ion-input [(ngModel)]="hora" type="time" placeholder="Hora"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="nro_invitados" type="number" placeholder="Nro Invitados"></ion-input>
+    </ion-item>
 
+      <ion-label class="nota-aviso">
+        *Maximo 10 invitados
+      </ion-label>
+
+    <ion-segment-button  class="btn-registrar" (click)="registrarZonaDeportiva()">
+      <ion-label>Registrar Reserva</ion-label>
+    </ion-segment-button>
+  </div>
 </ion-content>

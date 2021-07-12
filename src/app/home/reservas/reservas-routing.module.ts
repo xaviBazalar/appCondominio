@@ -27,6 +27,10 @@ const routes: Routes = [
   {
     path: 'cine',
     loadChildren: () => import('./cine/cine.module').then( m => m.CinePageModule)
+  },
+  {
+    path: 'listar',
+    loadChildren: () => import('./listar-reservas/listar-reservas.module').then( m => m.ListarReservasPageModule)
   }
 ];
 

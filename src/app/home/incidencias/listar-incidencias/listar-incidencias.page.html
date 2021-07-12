@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista Incidencias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-list>
+      <ion-item *ngFor="let incidencia of incidencias">
+        <ion-text>
+            <h4>{{ incidencia.nombres }}</h4>
+            <span>{{ incidencia.asunto }}</span>
+            <p>{{ incidencia.fecha }} {{ incidencia.hora }}</p>
+        </ion-text>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

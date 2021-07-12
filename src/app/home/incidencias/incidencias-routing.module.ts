@@ -8,6 +8,10 @@ const routes: Routes = [
     path: '',
     component: IncidenciasPage,
     pathMatch: 'full'
+  },
+  {
+    path: 'listar',
+    loadChildren: () => import('./listar-incidencias/listar-incidencias.module').then( m => m.ListarIncidenciasPageModule)
   }
 ];
 
